@@ -3,21 +3,17 @@ python: 2.7
 sudo: false
 cache:
   directories:
-    - $HOME/.cache/pip
-
+  - $HOME/.cache/pip
 env:
-  - TOX_ENV=sphinx
-
+- TOX_ENV=sphinx
 install:
-  - pip install -U pip setuptools
-  - pip install tox
-  - python setup.py --version
-  - pip install -e.[doc]
-
+- pip install -U pip setuptools
+- pip install tox
+- python setup.py --version
+- pip install -e.[doc]
 script:
-  - tox -e "${TOX_ENV}"
-
+- tox -e "${TOX_ENV}"
 notifications:
   email: false
   slack:
-    secure: tqYNV2Se1j+QNL8encg2cKhh2Gyk15dnF9OuWFDaggeK9qXe6LQR+cCjGHn1eUeu517Q5FfWh+zBCmPRXl0pb3sWUz6n1wJynqIwZr1ERO65BZqgU3KTqcYym3JXiS7w4o5NUXsj7kzgUNxEOHWG0B5TXo/RsaXHQ7A5NZi0CdRNB/h8xqW2Huzuy+KG+0dvO0AlBX+nGoEk7C7NeRlnkVFqDNOkBMGmlItn349m+TVbKpEq+z7LDpNM8vpC8oW8Yiz6YyQaVgGup7JWuEoMMdjEtZ78xBbl3PGXNFwW3iahntkkrS9PXF4Rbv8sbLIjvkREexuJ5Q0spOc1g4nJBkOHCj/17i+IdDGJPnGUiRA2YiuXX5sg4lIDC6qJa4N1eJg6pTsdGrt3/lBl9eppyNcrzCOZfv2bcvzLZnZtsCf/L8VyIj+nVRBrXS+TE5pOepjzyr/p5k6hBygnsoEQeiq0dgZFpUUvwfMtVBPYv7oLhRlquLia8IVJf31jVL+9B+P/tZ8uUTWUEpsKMvaX0wgcv3HXzkItZd7A47kLFyavWRF7GQNuHZ9SNJqVWnrAhuvHz6BcYlfjEtD1/8OIl8wJHPkcLmV+XR8hkTZvSov+Yv1nUPibPYmb3l2NOAwoVIV5jDgviP5nbgkaQ/HOEsVmyJAcXO7IJC7u4wDVemA=
+    secure: m0726LiL66sQcrWQouZasaCHL7Fw2BMzCIm/f7FOQgTVKuxeQOVMjJ31iVYa7dfceIQFg4bmiiOhVv7FTV7MrbZXQ8IjY4MoRkY6o/FS5WCRrqdUvop/XEAJFY45Ca3M6c7IHfFzQndGxgNuLEq0yvHS9mAHpV3VWIhlrTaroaEySuBx2iWsLm7HSD+mmbTY4sVr3C8xk4Y0ekYNGh/N4ZAZU43tgs2wY6RD6twhk1R7lGZpDhBgUH/K3F8XtsOMbsyKntnrjNp1ee2EYUk+x7fuD25RYP/AjuaWSBvbCOJK2l+L+S0H6F3+KnXlZtDNO1ND+qyWPqeYy1HxHHeYzlmDUDkKO7/wxlMLxy04FRgJgEiq8YUBtdc80++vznEpQwwSSCxEC4FhP2MPQ1b/oRvV58rt3hw9PuKVW1SRNtDKdSCJ5nMvPGVu+21//82HUoDf0hhOP13hY9eudpTtdsQVRQMRVEPAKQ1wMbVMqJe2suDuCXskID+GUhQwWY/4J1b6u7IdgBfDifLCh11z5MRJcDTYaE/fwVMo0UoNGnNeb8gmTPQNKrSPN3FPY4Aj4+usXqZF9XcCVmA6PyytPraRIln7+tsATqY6AIZaHTKKG7mWCBHOvYyYe/J/ycjDOLnyG1oiqE3dkIxiW8Oxw8QCttu0CDBa236MskVCrbY=
