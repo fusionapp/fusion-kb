@@ -8,6 +8,8 @@ Documentation
 .. toctree::
    :maxdepth: 2
 
+   documentation/packs.rst
+
 
 Indices and tables
 ------------------
