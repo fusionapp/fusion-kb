@@ -4,6 +4,9 @@ sudo: false
 cache:
   directories:
   - "$HOME/.cache/pip"
+branches:
+  only:
+  - master
 env:
 - TOX_ENV=sphinx
 install:
