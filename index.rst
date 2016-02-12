@@ -29,3 +29,10 @@ search criteria and pressing :kbd:`Enter`.
    :caption: Documentation
 
    documentation/packs.rst
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Support
+
+   support/issues.rst
